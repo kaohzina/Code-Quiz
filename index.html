@@ -9,33 +9,29 @@
 </head>
 
 <body>
-  <header class="not-boring">
+  <container>
     <!-- This is where the highscore and timer will be located.-->
-    <h1 class="color">View High-Scores!</h1>
-      <span id="timer">
-      </span>
-  </header>
+    <h1>View High-Scores!
+      <div id="timer">Time: 60</div>
+    </h1>
+    </container>
 
   <main class="content">
     <!-- This is where the quiz will take place. There will be one designated area for the quiz questions to be prompted.-->
-    <section class="font">
-      <!--This section is designated for the question that is prompted.-->
-      This is just an area for the questions to be asked!
-    </section>
     
-    <section class="font">
+    <container class="font questions">
       <!--This section is designated for the four answers that are possible. -->This is just an area for the answers to be listed!
-      <ul>
-        <li>something here</li>
+      <ol class="answers">
         <li></li>
         <li></li>
         <li></li>
-      </ul>
-    </section>
+        <li></li>
+      </ol>
+    </container>
 
     <section class="font">
       <!--This section is designated for the message that is displayed under the possible answers.-->
-      This is just an area that determines if the answer was correct or not!
+      <button onclick="timer()">Start Quiz</button>
       CORRECT!
       INCORRECT!
     </section>

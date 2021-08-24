@@ -10,17 +10,17 @@ const score = function(){
 }
 //this will hold the timer in the entire page.
 var count = 11; 
-var counter = setInterval(timer, 1000);
 const timer = function(){
   count = count-1;
   if (count <= -1) {
     clearInterval(counter);
     return;
   }
-  document.getElementById("timer").innerHTML=count;
+  document.getElementById("timer").innerHTML="Time: " + count;
+  
 }
 
-
+var counter = setInterval(timer, 1000);
 
 //this displays correct/incorrect when you click a specific answer on the quiz. 
 const answer = function(){
@@ -44,9 +44,14 @@ const scoreMinus = function(){
 
 //will hold majority of the code
 const startQuiz = function(){
-
+object.addEventListener("click", startQuiz);
 }
 //will be used to receive the scores at the end.
 const getScore = function(){
 
 }
+
+
+const Q1 = [
+
+]

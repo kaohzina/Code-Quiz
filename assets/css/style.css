@@ -5,11 +5,11 @@
 /* There should be a style for the highscore box
 /* There should be a designated style for the buttons that need to be pressed
 /* Due to time restraints, don't try to make anything flashy. No hover buttons, no crazy sizing. Just an MVP.*/
-
-.not-boring {
-  background-color: aquamarine;
-  padding: 10px;
+.container h1, div {
+  display: inline-flex;
+  padding: 10px; 
 }
+
 .content {
   max-width: 500px;
   margin: auto;
@@ -20,3 +20,7 @@
 .font {
   font-size: xx-large;
 }
+
+/* .flex{
+  flex-wrap: wrap
+} */
