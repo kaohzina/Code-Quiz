@@ -34,16 +34,16 @@ const questions = [
 const score = function () {};
 //this will hold the timer in the entire page.
 var count = 11;
+var counter;
 const timer = function () {
-  count = count - 1;
-  if (count <= -1) {
-    clearInterval(counter);
-    return;
-  }
-  timerEl.innerHTML = "Time: " + count;
+  counter = setInterval(function () {
+    count = count - 1;
+    if (count <= 0) {
+      clearInterval(counter);
+    }
+    timerEl.innerHTML = "Time: " + count;
+  }, 1000);
 };
-
-var counter = setInterval(timer, 1000);
 
 //this displays correct/incorrect when you click a specific answer on the quiz.
 const answer = function () {
@@ -64,19 +64,13 @@ const scoreMinus = function () {};
 
 //will call timer and quiz questions
 const startQuiz = function () {
- timer();
- createQuestion();
+  timer();
+  createQuestion();
 };
 
 //will be used to receive the scores at the end.
 const getScore = function () {};
 
-const createQuestion = function(){
-
-}
-
-
-
-
+const createQuestion = function () {};
 
 quizEl.addEventListener("click", startQuiz);
