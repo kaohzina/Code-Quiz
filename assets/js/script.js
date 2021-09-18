@@ -1,6 +1,8 @@
 const timerEl = document.getElementById("timer");
 const answerEl = document.getElementById("answers");
 const quizEl = document.getElementById("quiz");
+const questionEl = document.getElementById("question");
+
 
 const questions = [
   {
@@ -71,6 +73,13 @@ const startQuiz = function () {
 //will be used to receive the scores at the end.
 const getScore = function () {};
 
-const createQuestion = function () {};
+const createQuestion = function () {
+questionEl.innerHTML = questions[i].question
+
+
+
+};
+
+
 
 quizEl.addEventListener("click", startQuiz);

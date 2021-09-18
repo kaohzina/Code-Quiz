@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Code-Quiz</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code-Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-<body>
-  <container>
-    <!-- This is where the highscore and timer will be located.-->
-    <h1>View High-Scores!
-      <div id="timer">Time: </div>
-    </h1>
+  <body>
+    <container>
+      <!-- This is where the highscore and timer will be located.-->
+      <h1>
+        View High-Scores!
+        <div id="timer">Time:</div>
+      </h1>
     </container>
 
-  <main class="content">
-    <!-- This is where the quiz will take place. There will be one designated area for the quiz questions to be prompted.-->
-    
-    <container class="font questions">
-      <!--This section is designated for the four answers that are possible. -->This is just an area for the answers to be listed!
-      <ol class="answers">
-      </ol>
-    </container>
+    <main class="content">
+      <!-- This is where the quiz will take place. There will be one designated area for the quiz questions to be prompted.-->
+      <h1 class="font questions" id="question"></h1>
+      <container class="font questions">
+        <!--This section is designated for the four answers that are possible. -->This
+        is just an area for the answers to be listed!
+        <ol class="answers"></ol>
+      </container>
 
-    <section class="font">
-      <!--This section is designated for the message that is displayed under the possible answers.-->
-      <button id="quiz">Start Quiz</button>
-      CORRECT!
-      INCORRECT!
-    </section>
-    <!-- More than likely there will be another html that will take the user to the high score area.-->
-  </main>
+      <section class="font">
+        <!--This section is designated for the message that is displayed under the possible answers.-->
+        <button id="quiz">Start Quiz</button>
+        CORRECT! INCORRECT!
+      </section>
+      <!-- More than likely there will be another html that will take the user to the high score area.-->
+    </main>
 
-  <footer>
-    <!--The footer could be removed if I am going to use the remaining section to be used for the correct/incorrect display.-->
-  </footer>
+    <footer>
+      <!--The footer could be removed if I am going to use the remaining section to be used for the correct/incorrect display.-->
+    </footer>
 
-  <script src = "./assets/js/script.js"></script>
-</body>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
