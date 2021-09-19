@@ -20,18 +20,18 @@ const createQuestion = function () {
 
 const questions = [
   {
-    question: "What color is the sky",
-    answers: ["red", "yellow", "green", "blue"],
+    question: "The code used to program this project is?",
+    answers: ["Javascript", "C", "Python", "Java"],
+    correctAnswer: "Javascript",
+  },
+  {
+    question: "What is the tool used to see the code in your browser?",
+    answers: ["Search", "DevTools", "Find", "Locate"],
     correctAnswer: "blue",
   },
   {
-    question: "What color is the sky",
-    answers: ["red", "yellow", "green", "blue"],
-    correctAnswer: "blue",
-  },
-  {
-    question: "What color is the sky",
-    answers: ["red", "yellow", "green", "blue"],
+    question: "What method would you use to create a list?",
+    answers: ["red", "yellow", "green", "Arrays"],
     correctAnswer: "blue",
   },
   {
@@ -40,11 +40,6 @@ const questions = [
     correctAnswer: "blue",
   },
 ];
-//Script will have all the functionality to the quiz itself
-//The quiz will have each answer have a certain value: I only need to make 2 values thankfully. One being correct and one being correct
-//I need to make buttons that will start the quiz
-//I need to make buttons that will clear the highscore list and go back to the main quiz as well.
-//
 
 //score is determined by the remaining time on the timer.
 const score = function () {};
