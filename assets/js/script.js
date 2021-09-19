@@ -3,7 +3,8 @@ const answerEl = document.getElementById("answers");
 const quizEl = document.getElementById("quiz");
 const questionEl = document.getElementById("question");
 
-
+//Starting the game with a score of 0.
+var score = 0;
 const questions = [
   {
     question: "What color is the sky",
