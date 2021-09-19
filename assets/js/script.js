@@ -5,6 +5,19 @@ const questionEl = document.getElementById("question");
 
 //Starting the game with a score of 0.
 var score = 0;
+
+//Loop through every question until finished with the quiz.
+for (var i = 0; i < questions.length; i++);
+
+//Display the current question to the user with the answers below. 
+const createQuestion = function () {
+  questionEl.innerHTML = questions[i].question
+  
+  
+  
+  };
+  
+
 const questions = [
   {
     question: "What color is the sky",
@@ -74,12 +87,6 @@ const startQuiz = function () {
 //will be used to receive the scores at the end.
 const getScore = function () {};
 
-const createQuestion = function () {
-questionEl.innerHTML = questions[i].question
-
-
-
-};
 
 
 
