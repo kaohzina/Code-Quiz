@@ -18,45 +18,64 @@ const timer = function () {
   }, 1000);
 };
 
-
-
-//Starting the game with a score of 0.
-// var score = 0;
-
-//Loop through every question until finished with the quiz.
-// for (var i = 0; i < questions.length; i++);
-
-//Display the current question to the user with the answers below. 
-// const createQuestion = function () {
-//   questionEl.innerHTML = questions[i].question
-  
-  
-  
-//   };
-  
-
 const questions = [
   {
     question: "The code used to program this project is?",
     answers: ["Javascript", "C", "Python", "Java"],
-    correctAnswer: "Javascript",
+    correctAnswer: [1],
   },
   {
     question: "What is the tool used to see the code in your browser?",
     answers: ["Search", "DevTools", "Find", "Locate"],
-    correctAnswer: "blue",
+    correctAnswer: [2],
   },
   {
     question: "What method would you use to create a list?",
     answers: ["red", "yellow", "green", "Arrays"],
-    correctAnswer: "blue",
+    correctAnswer: [4],
   },
   {
     question: "What color is the sky",
     answers: ["red", "yellow", "green", "blue"],
-    correctAnswer: "blue",
-  },
+    correctAnswer: [4],
+  }
 ];
+
+//Starting the game with a score of 0.
+var score = 0;
+
+//Loop through every question until finished with the quiz.
+for (var i = 0; i < questions.length; i++){
+
+  //Display current question to user.
+  var answer = confirm(questions[i].q);
+
+  //Compare answers
+  if (
+    (answer === true && questions[i].a === '') ||
+    (answer === false && questions[i].a === '')
+  )
+  {
+    score++;
+    //Alert the user
+    alert('Correct!');
+  } else {
+    alert('Wrong!');
+  }
+}
+
+
+
+//Display the current question to the user with the answers below. 
+const createQuestion = function () {
+  questionEl.innerHTML = questions[i].question
+  
+  
+  
+  };
+  
+
+
 
 //score is determined by the remaining time on the timer.
 const score = function () {};
