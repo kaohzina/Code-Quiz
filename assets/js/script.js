@@ -3,6 +3,22 @@ const answerEl = document.getElementById("answers");
 const quizEl = document.getElementById("quiz");
 const questionEl = document.getElementById("question");
 
+
+//Timer function
+var count = 11;
+var counter;
+const timer = function () {
+  counter = setInterval(function () {
+    count = count - 1;
+    if (count <= 0) {
+      clearInterval(counter);
+    }
+    timerEl.innerHTML = "Time: " + count;
+  }, 1000);
+};
+
+
+
 //Starting the game with a score of 0.
 var score = 0;
 
@@ -43,18 +59,7 @@ const questions = [
 
 //score is determined by the remaining time on the timer.
 const score = function () {};
-//this will hold the timer in the entire page.
-var count = 11;
-var counter;
-const timer = function () {
-  counter = setInterval(function () {
-    count = count - 1;
-    if (count <= 0) {
-      clearInterval(counter);
-    }
-    timerEl.innerHTML = "Time: " + count;
-  }, 1000);
-};
+
 
 //this displays correct/incorrect when you click a specific answer on the quiz.
 const answer = function () {
