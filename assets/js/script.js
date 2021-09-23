@@ -3,7 +3,8 @@ const answerEl = document.getElementById("answers");
 const quizEl = document.getElementById("quiz");
 const questionEl = document.getElementById("question");
 
-
+//Access the <body> element in html
+var body = document.body;
 //Timer function
 var count = 11;
 var counter;
@@ -20,18 +21,18 @@ const timer = function () {
 
 
 //Starting the game with a score of 0.
-var score = 0;
+// var score = 0;
 
 //Loop through every question until finished with the quiz.
-for (var i = 0; i < questions.length; i++);
+// for (var i = 0; i < questions.length; i++);
 
 //Display the current question to the user with the answers below. 
-const createQuestion = function () {
-  questionEl.innerHTML = questions[i].question
+// const createQuestion = function () {
+//   questionEl.innerHTML = questions[i].question
   
   
   
-  };
+//   };
   
 
 const questions = [
@@ -80,8 +81,9 @@ const scoreMinus = function () {};
 
 //will call timer and quiz questions
 const startQuiz = function () {
+  console.log("hello how are you?");
   timer();
-  createQuestion();
+  // createQuestion();
 };
 
 //will be used to receive the scores at the end.
