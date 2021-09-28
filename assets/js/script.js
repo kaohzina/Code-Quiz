@@ -2,6 +2,7 @@ const timerEl = document.getElementById("timer");
 const answerEl = document.getElementById("answers");
 const quizEl = document.getElementById("quiz");
 const questionEl = document.getElementById("question");
+const answersEl = document.getElementById("answers");
 
 //Access the <body> element in html
 var body = document.body;
@@ -18,26 +19,28 @@ const timer = function () {
   }, 1000);
 };
 
+
+// Questions have answers and correct answers with them.
 const questions = [
   {
     question: "The code used to program this project is?",
     answers: ["Javascript", "C", "Python", "Java"],
-    correctAnswer: [1],
+    correctAnswer: "Javascript",
   },
   {
     question: "What is the tool used to see the code in your browser?",
     answers: ["Search", "DevTools", "Find", "Locate"],
-    correctAnswer: [2],
+    correctAnswer: "DevTools",
   },
   {
     question: "What method would you use to create a list?",
-    answers: ["red", "yellow", "green", "Arrays"],
-    correctAnswer: [4],
+    answers: ["Stack", "List", "Order list", "Arrays"],
+    correctAnswer: "Arrays",
   },
   {
     question: "What color is the sky",
     answers: ["red", "yellow", "green", "blue"],
-    correctAnswer: [4],
+    correctAnswer: "blue",
   }
 ];
 
@@ -48,7 +51,8 @@ var score = 0;
 for (var i = 0; i < questions.length; i++){
 
   //Display current question to user.
-  var answer = confirm(questions[i].q);
+  var displayQuestion = (questions[i].question);
+  var displayAnswer = (questions[i].answers);
 
   //Compare answers
   if (
