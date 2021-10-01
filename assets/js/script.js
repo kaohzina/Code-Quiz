@@ -6,9 +6,9 @@ const answersEl = document.getElementById("answers");
 
 //Access the <body> element in html
 var body = document.body;
-//Timer function
-var count = 11;
+var count = 101;
 var counter;
+
 const timer = function () {
   counter = setInterval(function () {
     count = count - 1;
@@ -54,24 +54,25 @@ for (var i = 0; i < questions.length; i++){
   var displayQuestion = (questions[i].question);
   var displayAnswer = (questions[i].answers);
 
-  //Compare answers
-  if (
+  //Check if the answer is right
+const correct = function(answer) {
+  if(answer){
     (answer === true && questions[i].a === '') ||
     (answer === false && questions[i].a === '')
-  )
-  {
     score++;
     //Alert the user
     alert('Correct!');
   } else {
     alert('Wrong!');
-  }
+    count = count -10
+    timerEl.innerHTML = "Time: " + count;
+  } 
 }
 
-
+}
 
 //Display the current question to the user with the answers below. 
-const createQuestion = function () {
+const showQuestion = function () {
   questionEl.innerHTML = questions[i].question
   
   
@@ -85,16 +86,6 @@ const createQuestion = function () {
 const score = function () {};
 
 
-//this displays correct/incorrect when you click a specific answer on the quiz.
-const answer = function () {
-  //display the word correct!
-  if (result === true) {
-    console.log("Correct!");
-  } else {
-    console.log("Incorrect!");
-  }
-};
-
 const saveScore = function () {
   localStorage.setItem("score", score);
 };
@@ -104,7 +95,6 @@ const scoreMinus = function () {};
 
 //will call timer and quiz questions
 const startQuiz = function () {
-  console.log("hello how are you?");
   timer();
   // createQuestion();
 };
