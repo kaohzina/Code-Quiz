@@ -1,26 +1,5 @@
-/* THINGS THAT NEED CSS 
-/* The header should be nice and colorful
-/* The writing should be readable and a decent font to see
-/* The boxes that are going to hold the answers should all be uniform and consistnently space apart i.e. flexbox's
-/* There should be a style for the highscore box
-/* There should be a designated style for the buttons that need to be pressed
-/* Due to time restraints, don't try to make anything flashy. No hover buttons, no crazy sizing. Just an MVP.*/
-/* .container h1, div {
-  display: inline-flex;
-  padding: 10px; 
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
 }
-
-.content {
-  max-width: 500px;
-  margin: auto;
-  background-color: rgb(153, 149, 149);
-  padding: 150px;
-}
-
-.font {
-  font-size: xx-large;
-}
-
-/* .flex{ */
-  /* flex-wrap: wrap
-/* } */

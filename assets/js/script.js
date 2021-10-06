@@ -20,7 +20,6 @@ const timer = function () {
   }, 1000);
 };
 
-// Questions have answers and correct answers with them.
 const questions = [
   {
     question: "The code used to program this project is?",
@@ -79,17 +78,10 @@ const showQuestion = function () {
   // }
 };
 
-//score is determined by the remaining time on the timer.
-// const score = function () {};
 
-// const saveScore = function () {
-//   localStorage.setItem("score", score);
-// };
 
-//this will make it so that the timer will reduce once an incorrect answer has been chosen.
 const scoreMinus = function () {};
 
-//will call timer and quiz questions
 const startQuiz = function () {
   timer();
   quizEl.remove();
@@ -97,7 +89,6 @@ const startQuiz = function () {
   // displayQuestion();
 };
 
-//will be used to receive the scores at the end.
 const getScore = function () {};
 
 quizEl.addEventListener("click", startQuiz);
