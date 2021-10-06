@@ -49,38 +49,37 @@ const questions = [
 var score = 0;
 
 //Loop through every question until finished with the quiz.
-for (var i = 0; i < questions.length; i++){
+// for (var i = 0; i < questions.length; i++){
 
-  //Display current question to user.
-  var displayQuestion = (questions[i].question);
-  var displayAnswer = (questions[i].answers);
+//   //Display current question to user.
+//   var displayQuestion = (questions[i].question);
+//   var displayAnswer = (questions[i].answers);
 
-  //Check if the answer is right
-const correct = function(answer) {
-  if(answer){
-    (answer === true && questions[i].a === '') ||
-    (answer === false && questions[i].a === '')
-    score++;
-    //Alert the user
-    alert('Correct!');
-  } else {
-    alert('Wrong!');
-    count = count -10
-    timerEl.innerHTML = "Time: " + count;
-  } 
-}
+//   //Check if the answer is right
+// const correct = function(answer) {
+//   if(answer){
+//     (answer === true && questions[i].a === '') ||
+//     (answer === false && questions[i].a === '')
+//     score++;
+//     //Alert the user
+//     alert('Correct!');
+//   } else {
+//     alert('Wrong!');
+//     count = count -10
+//     timerEl.innerHTML = "Time: " + count;
+//   } 
+// }
 
-}
+// }
 
 //Display the current question to the user with the answers below. 
 const showQuestion = function () {
   
-  for (var i = 0; i < questions.length; i++){
-
-    //Display current question to user.
-    var displayQuestion = (questions[i].question);
-    var displayAnswer = (questions[i].answers);
-  }
+  // for (var i = 0; i < questions.length; i++){
+  //   var displayQuestion = (questions[i].question);
+  //   var displayAnswer = (questions[i].answers);
+  // }
+ 
 };
   
 
