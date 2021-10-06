@@ -5,6 +5,7 @@ const questionEl = document.getElementById("question");
 const answersEl = document.getElementById("answers");
 
 //Access the <body> element in html
+
 var body = document.body;
 var count = 101;
 var counter;
@@ -73,22 +74,25 @@ const correct = function(answer) {
 
 //Display the current question to the user with the answers below. 
 const showQuestion = function () {
-  questionEl.innerHTML = questions[i].question
   
-  
-  
-  };
+  for (var i = 0; i < questions.length; i++){
+
+    //Display current question to user.
+    var displayQuestion = (questions[i].question);
+    var displayAnswer = (questions[i].answers);
+  }
+};
   
 
 
 
 //score is determined by the remaining time on the timer.
-const score = function () {};
+// const score = function () {};
 
 
-const saveScore = function () {
-  localStorage.setItem("score", score);
-};
+// const saveScore = function () {
+//   localStorage.setItem("score", score);
+// };
 
 //this will make it so that the timer will reduce once an incorrect answer has been chosen.
 const scoreMinus = function () {};
@@ -96,7 +100,9 @@ const scoreMinus = function () {};
 //will call timer and quiz questions
 const startQuiz = function () {
   timer();
-  // createQuestion();
+  quizEl.remove();
+  showQuestion();
+  // displayQuestion();
 };
 
 //will be used to receive the scores at the end.
