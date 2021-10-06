@@ -1,42 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code-Quiz</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <h1>
-    View High-Scores!
-    <div id="timer">Time:</div>
-  </h1>
-  <main  class="content">
-      
 
-    <body>
-      <!-- This is where the quiz will take place. There will be one designated area for the quiz questions to be prompted.-->
-     
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code-Quiz</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<h1>
+  View High-Scores!
+  <div id="timer">Time:</div>
+</h1>
+<main class="content">
 
-
-      
+  <body>
+    <div class="font questions">
       <h1 class="font questions" id="question"></h1>
-      <container class="font questions">
-        <!--This section is designated for the four answers that are possible. -->
-        <ol class="answers"></ol>
-      </container>
+    </div>
+    <div>
+      <ol class="answers"></ol>
+    </div>
 
-      <section class="font">
-        <!--This section is designated for the message that is displayed under the possible answers.-->
-        <button id="quiz">Start Quiz</button>
-      </section>
-      <!-- More than likely there will be another html that will take the user to the high score area.-->
-    </main>
-
-    <footer>
-      <!--The footer could be removed if I am going to use the remaining section to be used for the correct/incorrect display.-->
-    </footer>
-
-    <script src="./assets/js/script.js"></script>
+    <div>
+      <button id="quiz">Start Quiz</button>
+    </div>
   </body>
+</main>
+<footer></footer>
+<script src="./assets/js/script.js"></script>
+</body>
+
 </html>

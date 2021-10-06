@@ -20,7 +20,6 @@ const timer = function () {
   }, 1000);
 };
 
-
 // Questions have answers and correct answers with them.
 const questions = [
   {
@@ -42,7 +41,7 @@ const questions = [
     question: "What color is the sky",
     answers: ["red", "yellow", "green", "blue"],
     correctAnswer: "blue",
-  }
+  },
 ];
 
 //Starting the game with a score of 0.
@@ -67,27 +66,21 @@ var score = 0;
 //     alert('Wrong!');
 //     count = count -10
 //     timerEl.innerHTML = "Time: " + count;
-//   } 
+//   }
 // }
 
 // }
 
-//Display the current question to the user with the answers below. 
+//Display the current question to the user with the answers below.
 const showQuestion = function () {
-  
   // for (var i = 0; i < questions.length; i++){
   //   var displayQuestion = (questions[i].question);
   //   var displayAnswer = (questions[i].answers);
   // }
- 
 };
-  
-
-
 
 //score is determined by the remaining time on the timer.
 // const score = function () {};
-
 
 // const saveScore = function () {
 //   localStorage.setItem("score", score);
@@ -106,8 +99,5 @@ const startQuiz = function () {
 
 //will be used to receive the scores at the end.
 const getScore = function () {};
-
-
-
 
 quizEl.addEventListener("click", startQuiz);
