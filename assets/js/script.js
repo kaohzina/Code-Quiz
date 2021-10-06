@@ -3,10 +3,7 @@ const answerEl = document.getElementById("answers");
 const quizEl = document.getElementById("quiz");
 const questionEl = document.getElementById("question");
 const answersEl = document.getElementById("answers");
-const answer1 = document.getElementById("answers1");
-const answer2 = document.getElementById("answers2");
-const answer3 = document.getElementById("answers3");
-const answer4 = document.getElementById("answers4");
+
 
 //Access the <body> element in html
 
@@ -28,22 +25,22 @@ const questions = [
   {
     question: "The code used to program this project is?",
     answers: ["Javascript", "C", "Python", "Java"],
-    correctAnswer: "Javascript",
+    correctAnswer: 1,
   },
   {
     question: "What is the tool used to see the code in your browser?",
     answers: ["Search", "DevTools", "Find", "Locate"],
-    correctAnswer: "DevTools",
+    correctAnswer: 2,
   },
   {
     question: "What method would you use to create a list?",
     answers: ["Stack", "List", "Order list", "Arrays"],
-    correctAnswer: "Arrays",
+    correctAnswer: 4,
   },
   {
     question: "What color is the sky",
     answers: ["red", "yellow", "green", "blue"],
-    correctAnswer: "blue",
+    correctAnswer: 3,
   },
 ];
 
@@ -51,22 +48,26 @@ const questions = [
 var score = 0;
 
 //Loop through every question until finished with the quiz.
-// for (var i = 0; i < questions.length; i++){
+
 
 //   //Display current question to user.
 //   var displayQuestion = (questions[i].question);
 //   var displayAnswer = (questions[i].answers);
 
 const displayQuestion =function() {
-  for (var i = 0; i < questions.length; i++){
-    questionEl.innerHTML = questions[i].question;
-    answer1.innerHTML = questions[1].answers[1];
-    answer2.innerHTML = questions[i].answers[2];
-    answer3.innerHTML = questions[i].answers[3];
-    answer4.innerHTML = questions[i].answers[4];
+  //clear div
+  questionEl.innerHTML = questions[i].question;
+  for (var i = 0; i < questions.answers.length; i++){ 
+  answers = document.createElement('button');
+  answers.innerHTML = questions.answers[i];
+  answers.setAttribute('id',1)
+
+  //click the correct answer
+  // answers.onclick = function(){
+
+  // }
   }
 }
-
 
 
   
