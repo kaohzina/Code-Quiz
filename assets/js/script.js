@@ -3,6 +3,10 @@ const answerEl = document.getElementById("answers");
 const quizEl = document.getElementById("quiz");
 const questionEl = document.getElementById("question");
 const answersEl = document.getElementById("answers");
+const answer1 = document.getElementById("answers1");
+const answer2 = document.getElementById("answers2");
+const answer3 = document.getElementById("answers3");
+const answer4 = document.getElementById("answers4");
 
 //Access the <body> element in html
 
@@ -53,40 +57,25 @@ var score = 0;
 //   var displayQuestion = (questions[i].question);
 //   var displayAnswer = (questions[i].answers);
 
-//   //Check if the answer is right
-// const correct = function(answer) {
-//   if(answer){
-//     (answer === true && questions[i].a === '') ||
-//     (answer === false && questions[i].a === '')
-//     score++;
-//     //Alert the user
-//     alert('Correct!');
-//   } else {
-//     alert('Wrong!');
-//     count = count -10
-//     timerEl.innerHTML = "Time: " + count;
-//   }
-// }
-
-// }
-
-//Display the current question to the user with the answers below.
-const showQuestion = function () {
-  // for (var i = 0; i < questions.length; i++){
-  //   var displayQuestion = (questions[i].question);
-  //   var displayAnswer = (questions[i].answers);
-  // }
-};
+const displayQuestion =function() {
+  for (var i = 0; i < questions.length; i++){
+    questionEl.innerHTML = questions[i].question;
+    answer1.innerHTML = questions[1].answers[1];
+    answer2.innerHTML = questions[i].answers[2];
+    answer3.innerHTML = questions[i].answers[3];
+    answer4.innerHTML = questions[i].answers[4];
+  }
+}
 
 
 
-const scoreMinus = function () {};
+  
+
 
 const startQuiz = function () {
   timer();
   quizEl.remove();
-  showQuestion();
-  // displayQuestion();
+  displayQuestion();
 };
 
 const getScore = function () {};
